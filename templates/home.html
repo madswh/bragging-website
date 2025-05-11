@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Maddy's online showcase">
+        <link rel="stylesheet" href="templates/static/css/style.css">
+        <title>Maddy Whitney</title>
+    </head>
+    
+    <body>
+        <h1>
+            <img class="image-pixelcat" src="templates/static/images/pixelcat.png">
+            <p>Maddy's Website</p>
+        </h1>
+
+        <nav>
+            <a class="nav-item" href="https://www.linkedin.com/in/maddy-whitney-430b10172/">LinkedIn</a>
+            <a class="nav-item" href="https://github.com/madswh/504DA_0306">GitHub</a>
+            <a class="nav-item" href="Whitney_Miranda_resume.pdf">Full Resume</a>
+            <a class="nav-item" href="#Contact">Contact</a>
+        </nav>
+
+        <div>
+            <p class="intro">This is my first website. I learned this from a combination of YouTube and trial-and-error, very late at night.
+            Below, you will find links to my GitHub and LinkedIn pages, plus a PDF of my full resume. 
+            In 2023, I graduated from the University of Puget Sound with my BS in Chemistry; 
+            currently I am studying Software Design and Engineering at the University of Washington.</p>
+        </div>    
+
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Dungeon Adventure</h3>
+                <p>A text-based adventure game where you can explore a dungeon, fight monsters, and collect loot.</p>
+            <div class="project">
+                <h3>This current website</h3>
+                <p>A hommade concoction of AI autofills and tears created this site, isnt it glorious?</p>
+            
+        <h2>Reviews</h2>
+        <div class="review-container">
+            <div class="review">
+                <h3>Martha says</h3>
+                <p>This woman is so odd.</p>
+            </div>
+            <div class="review">
+                <h3>Jenna says</h3>
+                <p>my apartmt was on fire but Madd the brave extingueshed it.</p>
+            </div>
+            <div class="review">
+                <h3>Archibald says</h3>
+                <p>she made fun of my name, 0 stars. But the work she and her team put into the Dungeon Adventure course-project was phenomenal!</p>
+            </div>
+            <div class="review">
+                <h3>Third-grade Teacher says</h3>
+                <p>Maddy was a pleasure to have in class, I just wish her handwriting was more refined.</p>
+            </div>
+        </div>
+
+        <h2 id="Resume">Resume</h2>
+        <img class="resume" src="templates/static/images/Whitney_Miranda_resume.pdf" alt="Resume">
+
+        <h2 id="Contact">Contact</h2>
+        <form action="" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+        <footer><a href="templates/about.html">About</a></footer>
+
+    </body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1e6f4;
+        color: #82578e;
+        margin: 10px;
+    }
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 50pt;
+        background-color: #82578e;
+        color: #f1e6f4;
+        padding-bottom: 5px;
+    }
+
+    nav {
+        font-size: 18pt;
+        background-color: #6b4c74;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: none;
+    }
+    .nav-item {
+        color: #f1e6f4;
+        text-decoration: none;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-item:hover {
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #c296ce;
+        border-radius: 10px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: normal;
+        color: #f1e6f4;
+        background-color: #82578e;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .review-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .review {
+        text-align: center;
+        background-color: #ab82b7;
+        color: #f1e6f4;
+        margin: 5%;
+        border-radius: 10px;
+        min-height: 150px;
+    }
+    .review h3 {
+        padding: 5px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        margin: 0px;
+        background-color: #82578e;
+    }
+    .review p {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .resume {
+        size: 100%;
+    }
+
+    form {
+        display: grid;
+    }
+    form label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    form button {
+        margin-top: 10px;
+        border:none;
+        background-color: #82578e;
+        color: #f1e6f4;
+        padding: 10px
+    }
+    form input {
+        margin:0px;
+        border:0px;
+    }
+    form textarea {
+        margin:0px;
+        border:none;
+    }
+</style>
