@@ -1,0 +1,117 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1e6f4;
+        color: #82578e;
+        margin: 10px;
+    }
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 50pt;
+        background-color: #82578e;
+        color: #f1e6f4;
+        padding-bottom: 5px;
+    }
+    h1 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 25%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        border: #54385c 5px solid;
+    }
+    h1 p {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        font-size: 18pt;
+        background-color: #6b4c74;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: none;
+    }
+    .nav-item {
+        color: #f1e6f4;
+        text-decoration: none;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-item:hover {
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #c296ce;
+        border-radius: 10px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: normal;
+        color: #f1e6f4;
+        background-color: #82578e;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .review-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .review {
+        text-align: center;
+        background-color: #ab82b7;
+        color: #f1e6f4;
+        margin: 5%;
+        border-radius: 10px;
+        min-height: 150px;
+    }
+    .review h3 {
+        padding: 5px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        margin: 0px;
+        background-color: #82578e;
+    }
+    .review p {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .resume {
+        size: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    form {
+        display: grid;
+    }
+    form label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    form button {
+        margin-top: 10px;
+        border:none;
+        background-color: #82578e;
+        color: #f1e6f4;
+        padding: 10px
+    }
+    form input {
+        margin:0px;
+        border:0px;
+    }
+    form textarea {
+        margin:0px;
+        border:none;
+    }
