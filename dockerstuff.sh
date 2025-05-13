@@ -8,6 +8,6 @@ docker build -t brag:latest .
 # -rm: automatically remove the container when it exits
 # -p 80:5000: map port 80 on the host to port 5000 on the container
 # --name: name the container
-docker run -d -p -rm 80:5001 --name brag-container brag:latest
+docker run -d -p -rm 5001:5001 --name brag-container brag:latest
 #make sure the app actually starts
 python3 app.py
