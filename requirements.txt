@@ -2,4 +2,4 @@
 Flask==3.1.0
 
 #werkzeug is a comprehensive WSGI web application library
-Werkzeug==2.3.4
+Werkzeug==3.1
