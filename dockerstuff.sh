@@ -1,4 +1,5 @@
 #!/bin/bash
+git pull
 #build docker image
 docker build -t brag:latest .
 
