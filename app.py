@@ -6,3 +6,5 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template("home.html")
+
+app.run("0.0.0.0", 5001, debug=True)
