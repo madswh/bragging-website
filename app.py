@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from flask import Flask, render_template, request
-import sqlite3
+from __init__ import database, emailer
 
 app = Flask(__name__)
 
@@ -13,16 +13,10 @@ def submit():
     name = request.form.get("name")
     email = request.form.get("email")
     message = request.form.get("message")
-    if not name or not email:
-        return render_template("home.html", title="Maddy's Braggalicious Bragging Board", error="Please fill in all fields.")
-    
-    conn = sqlite3.connect('db.sql')
-    c = conn.cursor()
-    c.execute("insert into users (name, email, message) values (?, ?, ?)", (name, email, message))
-    conn.commit()
-    conn.close()
-    return render_template("home.html", title="Maddy's Braggalicious Bragging Board", success="Message submitted successfully!")    
+    database.save_to_db(name, email, message)
+    emailer.send_email(email,"Thank you for your message!", f'Your message: \n{message}\n has been received. I will get back to you soon!')
+    return render_template("home.html", title="Maddy's Braggalicious Bragging Board", message="Your message has been submitted!")
 
 application = app
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5002, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
