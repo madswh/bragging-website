@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/nav.css')}}">
+<section class="nav-container">
+    <nav>
+        <a class="nav-item" target="_blank" href="https://www.linkedin.com/in/maddy-whitney-430b10172/">LinkedIn</a>
+        <a class="nav-item" target="_blank" href="https://github.com/madswh">GitHub</a>
+        <a class="nav-item" href="#Resume">Full Resume</a>
+        <a class="nav-item" href="#Contact">Contact</a>
+    </nav>
+</section>
+
+<script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>

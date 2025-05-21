@@ -1,5 +1,2 @@
-#latest version of flask
-Flask==3.1.0
-
-#werkzeug is a comprehensive WSGI web application library
-Werkzeug==3.1
+flask = 3.1.2
+gunicorn = 23.0.0
